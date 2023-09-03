@@ -10,6 +10,7 @@ const Gamma = () => {
   const [median, setMedian] = useState<number[]>([]);
   const [mode, setMode] = useState<number[]>([]);
 
+  // To calculate mean
   const meanHandler = () => {
     const meanValues: number[] = [];
     for (let alcoholValue = 1; alcoholValue <= 3; alcoholValue++) {
@@ -19,6 +20,7 @@ const Gamma = () => {
     setMean(meanValues);
   };
 
+  // To calculate median
   const medianHandler = () => {
     const medianValues: number[] = [];
     for (let alcoholValue = 1; alcoholValue <= 3; alcoholValue++) {
@@ -28,6 +30,7 @@ const Gamma = () => {
     setMedian(medianValues);
   };
 
+  // To calculate mode
   const modeHandler = () => {
     const modeValues: number[] = [];
     for (let alcoholValue = 1; alcoholValue <= 3; alcoholValue++) {
@@ -38,7 +41,7 @@ const Gamma = () => {
   };
 
   return (
-    <div>
+    <>
       <table>
         <thead>
           <tr>
@@ -93,7 +96,7 @@ const Gamma = () => {
           </tr>
         </tbody>
       </table>
-    </div>
+    </>
   );
 };
 

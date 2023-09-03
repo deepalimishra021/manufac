@@ -10,6 +10,7 @@ const Flavanoids: React.FC = () => {
   const [median, setMedian] = useState<number[]>([]);
   const [mode, setMode] = useState<number[]>([]);
 
+  // To calculate mean 
   const meanHandler = () => {
     const meanValues: number[] = [];
     for (let alcoholValue = 1; alcoholValue <= 3; alcoholValue++) {
@@ -19,6 +20,7 @@ const Flavanoids: React.FC = () => {
     setMean(meanValues);
   };
 
+  // To calculate median
   const medianHandler = () => {
     const medianValues: number[] = [];
     for (let alcoholValue = 1; alcoholValue <= 3; alcoholValue++) {
@@ -28,6 +30,7 @@ const Flavanoids: React.FC = () => {
     setMedian(medianValues);
   };
 
+  // To calculate mode
   const modeHandler = () => {
     let modeValues: number[] = [];
     for (let alcoholValue = 1; alcoholValue <= 3; alcoholValue++) {

@@ -17,7 +17,7 @@ export const calculateMedian = (alcoholValue: number): number => {
   const filteredData :any= allData.filter((obj) => obj.Alcohol === alcoholValue);
 
   if (filteredData.length === 0) {
-    return NaN; // Handle case when no data is found
+    return NaN; // to handle data not  found
   }
 
   const flavanoidsForAlcohol = filteredData
@@ -43,7 +43,7 @@ export function calculateMode(alcoholValue: number): number[] {
   const filteredData :any = allData.filter((obj) => obj.Alcohol === alcoholValue);
 
   if (filteredData.length === 0) {
-    return []; // Handle case when no data is found
+    return []; // to handle data not  found
   }
 
   const frequencyCount: { [key: string]: number } = {};
