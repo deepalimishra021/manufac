@@ -38,7 +38,7 @@ const Flavanoids: React.FC = () => {
   };
 
   return (
-    <div>
+    <>
       <table>
         <thead>
           <tr>
@@ -93,7 +93,7 @@ const Flavanoids: React.FC = () => {
           </tr>
         </tbody>
       </table>
-    </div>
+    </>
   );
 };
 
